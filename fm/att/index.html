@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hidden Attributes Guide</title>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" type="image/png" href="../favicon.png" />
+  <link href="../globalfm.css" rel="stylesheet" />
+  <link href="default.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-67284717-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>
+</head>
+
+<body onload="workMagic();addMH();">
+<div id="wrapper">
+<h1>Football Manager Hidden Attributes Guide</h1>
+
+<nav class="bgprop">
+  <ul>
+    <li><a href="../index.html">Home</a></li>
+	<li><a href="index.html">Hidden Attributes Guide</a></li>
+	<li>Roles Instructions
+      <ul class="sub-menu">
+        <li><a href="../roles/st.html">Strikers</a></li>
+        <li><a href="../roles/am.html">Attacking Midfielders</a></li>
+		<li><a href="../roles/wing.html">Wingers</a></li>
+		<li><a href="../roles/cm.html">Central Midfielders</a></li>
+		<li><a href="../roles/dm.html">Defensive Midfielders</a></li>
+		<li><a href="../roles/fbwb.html">Full Back and Wingers</a></li>
+		<li><a href="../roles/cd.html">Central Defenders</a></li>
+      </ul>
+	</li>
+  </ul>  
+</nav>
+
+<div id="bodycontent" class="bgprop">
+
+<noscript>
+  <p>Warning: This page requires JavaScript to be enabled in order to work.</p>
+</noscript>
+
+<div id="playerinfo">
+<p>Player Info</p>
+
+<form onchange="workMagic();" onsubmit="workMagic();return false;">
+  <label for="personality">Personality:</label>
+  <select name="personality" id="personality" onchange="addMH();">
+    <option value="modelCitizen">Model Citizen</option>
+    <option value="modelPro">Model Professional</option>
+    <option value="pro">Professional</option>
+    <option value="perf">Perfectionist</option>
+	<option value="temperamental" class="newgenOnly">Temperamental</option>
+	<option value="driven">Driven</option>
+	<option value="determined">Determined</option>
+	<option value="slack" class="newgenOnly">Slack</option>
+	<option value="casual" class="newgenOnly">Casual</option>
+	<option value="veryAmbitious">Very Ambitious</option>
+	<option value="ambitious">Ambitious</option>
+	<option value="unambitious" class="newgenOnly">Unambitious</option>
+	<option value="honest">Honest</option>
+	<option value="sporting">Sporting</option>
+	<option value="easilyDiscouraged" class="newgenOnly">Easily Discouraged</option>
+	<option value="lowDetermination" class="newgenOnly">Low Determination</option>
+	<option value="unsporting" class="newgenOnly">Unsporting</option>
+	<option value="realist" class="newgenOnly">Realist</option>
+	<option value="veryLoyal">Very Loyal</option>
+	<option value="loyal">Loyal</option>
+	<option value="ironWilled">Iron Willed</option>
+	<option value="resilient">Resilient</option>
+	<option value="spineless" class="newgenOnly">Spineless</option>
+	<option value="lowSelfBelief" class="newgenOnly">Low Self-Belief</option>
+	<option value="lightHearted">Light-Hearted</option>
+	<option value="spirited">Spirited</option>
+	<option value="jovial">Jovial</option>
+	<option value="resolute">Resolute</option>
+	<option value="fairlyPro">Fairly Professional</option>
+	<option value="fairlyDetermined">Fairly Determined</option>
+	<option value="fairlyAmbitious">Fairly Amibitous</option>
+	<option value="fairlyLoyal">Fairly Loyal</option>
+	<option value="fairlySporting">Fairly Sporting</option>
+	<option value="balanced">Balanced</option>
+  </select><br />
+  
+  <label for="media">Media-Handling:</label>
+  <select name="media" id="media">
+    <option value="outUnf" title="Outspoken, Unflapable">Out, Unf</option>
+	<option value="outStCon" title="Outspoken, Short Tempered, Confrontational">Out, ST, Con</option>
+	<option value="outSt" title="Outspoken, Short Tempered">Out, ST</option>
+	<option value="outVolCon" title="Outspoken, Volatile, Confrontational">Out, Vol, Con</option>
+	<option value="outVol" title="Outspoken, Volatile">Out, Vol</option>
+	<option value="outCon" title="Outspoken, Confrontational">Out, Con</option>
+    <option value="out" title="Outspoken">Out</option>
+	<option value="evaUnf" title="Evasive, Unflapable">Eva, Unf</option>
+	<option value="evaStCon" title="Evasive, Short Tempered, Confrontational">Eva, ST, Con</option>
+	<option value="evaSt" title="Evasive, Short Tempered">Eva, ST</option>
+	<option value="evaVolCon" title="Evasive, Volatile, Confrontational">Eva, Vol, Con</option>
+	<option value="evaVol" title="Evasive, Volatile">Eva, Vol</option>
+	<option value="evaCon" title="Evasive, Confrontational">Eva, Con</option>
+	<option value="evaRes" title="Evasive, Reserved">Eva, Res</option>
+	<option value="eva" title="Evasive">Eva</option>
+	<option value="unf" title="Unflapable">Unf</option>
+	<option value="stCon" title="Short Tempered, Confrontational">ST, Con</option>
+	<option value="st" title="Short Tempered">ST</option>
+	<option value="volCon" title="Volatile, Confrontational">Vol, Con</option>
+	<option value="vol" title="Volatile">Vol</option>
+	<option value="con" title="Confrontational">Con</option>
+	<option value="res" title="Reserved">Res</option>
+	<option value="lh" title="Level Headed">LH</option>
+	<option value="mfUnf" title="Media Friendly, Unflapable">MF, Unf</option>
+	<option value="mfStCon" title="Media Friendly, Short Tempered, Confrontational">MF, ST, Con</option>
+	<option value="mfSt" title="Media Friendly, Short Tempered">MF, ST</option>
+	<option value="mfVolCon" title="Media Friendly, Volatile, Confrontational">MF, Vol, Con</option>
+	<option value="mfVol" title="Media Friendly, Volatile">MF, Vol</option>
+	<option value="mfCon" title="Media Friendly, Confrontational">MF, Con</option>
+	<option value="mfRes" title="Media Friendly, Reserved">MF, Res</option>
+	<option value="mf" title="Media Friendly">MF</option>
+  </select><br />
+  
+  <label for="det">Determination:</label>
+  <input type="number" name="det" id="det" max="20" min="1" value="1"><br />
+  
+<label for="newgen">Newgen:</label>
+<input type="radio" id="newgenyes" name="newgen" value="yes" onchange="addMH();">Yes
+<input type="radio" id="newgenno" name="newgen" value="no" checked="checked" onchange="addMH();">No
+  
+</form>
+</div>
+
+<div id="attributes">
+<table>
+  <thead>
+    <tr>
+	  <th colspan="4">Hidden Attributes</th>
+	</tr>
+  </thead>
+  <tbody>
+    <tr title="How much a player wants to achieve success (Important attribute for young players and tutors)">
+	  <td>Ambition</td>
+	  <td id="minAmb">1</td>
+	  <td id="midAmb">-</td>
+	  <td id="maxAmb">20</td>
+	</tr>
+	<tr title ="A low attribute identifies a player who is more likely to become unhappy if their wage is lower than their teammates">
+	  <td>Loyalty</td>
+	  <td id="minLoy">1</td>
+	  <td id="midLoy">-</td>
+	  <td id="maxLoy">20</td>
+	</tr>
+	<tr title="A low attribute identifies a player who is more likely to react poorly to expectant team talks ('I expect a ...')">
+	  <td>Pressure</td>
+	  <td id="minPre">1</td>
+	  <td id="midPre">-</td>
+	  <td id="maxPre">20</td>
+	</tr>
+	<tr title="A low attribute identifies a player who is more likely to not work hard in training (Important attribute for young players and tutors)">
+	  <td>Professionalism</td>
+	  <td id="minPro">1</td>
+	  <td id="midPro">-</td>
+	  <td id="maxPro">20</td>
+	</tr>
+	<tr title="A low attribute identifies a player who is more likely to cheat (e.g. by diving)">
+	  <td>Sportsmanship</td>
+	  <td id="minSpo">1</td>
+	  <td id="midSpo">-</td>
+	  <td id="maxSpo">20</td>
+	</tr>
+	<tr id="tem" title="A low attribute identifies a player who is more likely to suffer large changes in morale very quickly">
+	  <td>Temperament</td>
+	  <td id="minTem">1</td>
+	  <td id="midTem">-</td>
+	  <td id="maxTem">20</td>
+	</tr>
+	<tr title="A high attribute identifies a player who is more likely to argue and criticise his manager in public (NEGATIVE ATTRIBUTE)">
+	  <td>Controversy</td>
+	  <td id="minCon">1</td>
+	  <td id="midCon">-</td>
+	  <td id="maxCon">20</td>
+	</tr>
+  </tbody>
+</table>
+<p>Hover over an attribute for more details</p>
+</div>
+</div>
+
+<div id="about" class="bgprop">
+<p>The script was made based on the data gathered by <a href="http://community.sigames.com/showthread.php/307808-The-Ultimate-Personality-Media-Handling-Guide"><em>Nocuous</em></a>, and with help from my friend <a href="https://www.reddit.com/user/ssjmaz"><em>ssjmaz</em></a>.</p> 
+<p>The data was originaly made for FM12 so it might be a bit outdated. Feel free to <a href="https://www.reddit.com/message/compose/?to=zFn">pm me</a> on reddit if you have newer data, or if you find a bug, and i will update the script.</p>
+<p>For more details about what each attribute does, check out the comprehensive guide on <a href="http://www.guidetofootballmanager.com/players/player-personalities">Player Personalities</a> from <a href="http://guidetofootballmanager.com"><em>guidetofootballmanager.com</em></a>.</p>
+</div>
+
+<footer class="bgprop">
+<p><small>&copy; Created by <a href="http://steamcommunity.com/id/zFn/">zFn</a>, 2015.</small></p>
+</footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>

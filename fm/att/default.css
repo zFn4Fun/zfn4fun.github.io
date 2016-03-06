@@ -1,0 +1,127 @@
+h1 {
+  text-align: center;
+  font-size: 29px;
+  margin-bottom: 21px;
+}
+p {
+  clear: left;
+}
+#wrapper {
+  width: 769px;
+  margin: 15em auto 0;
+  border-radius: 5px;
+}
+.bgprop {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 10px;
+}
+nav.bgprop {
+  padding-right: 15px;
+}
+nav {
+  float: left;
+  font-size: 15px;
+  margin-right: 10px;
+  line-height: 19px;
+  width: 181px;
+}
+nav ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+nav li {
+  color: #5e616b;
+}
+nav li::before {
+  content: "\00BB  ";
+  color: #7C7C7C;
+  transition: color 0.3s ease 0s;
+}
+nav li:hover::before {
+  color: #5E616B;
+}
+nav li ul {
+  padding-left: 15px;
+}
+#bodycontent {
+  float: left;
+  padding: 10px;
+  width: 533px;
+}
+#playerinfo, #attributes {
+  float: left;
+}
+#playerinfo {
+  margin: 0 30.7px 0px 12px;
+}
+#playerinfo p {
+  text-align: center; 
+  font-size: 16px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba(254, 254, 254, 0.3);
+  margin: 0;
+  padding: 1px 0;
+  margin-top: 2px;
+}
+input, select {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+#personality {
+  margin-top: 7px;
+  width: 134px;
+}
+#media {
+  width: 99px;
+}
+.newgenOnly {
+  display: none;
+}
+.shownewgenonly {
+  display: block;
+}
+#det {
+	width: 103px;
+}
+#attributes p {
+  margin-top: 3px;
+  margin-bottom: 14px;
+  color: gray;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+}
+table {
+  width: 200px;
+}
+th {
+  border-bottom: 1px solid rgba(254, 254, 254, 0.3);
+}
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+td ~ td {
+  text-align: center;
+}
+td:nth-child(3n+3) {
+}
+#about {
+  margin: 10px 0;
+  float: left;
+  font-size: 15px;
+}
+#about p {
+  margin: 0 0 5px;
+}
+#about p:last-child {
+  margin-bottom: 0;
+}
+footer {
+  clear: left;
+}
+footer p {
+  margin: 0;
+}

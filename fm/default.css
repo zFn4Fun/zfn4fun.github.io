@@ -1,0 +1,75 @@
+body {
+  font-size: 15px;
+}
+h1 {
+  background-color: rgba(0, 0, 0, 0.2);
+  margin: 0 0 10px;
+  padding: 21px 0;
+  font-size: 25px;
+  text-align: center;
+}
+h2 {
+  border-bottom: 1px solid rgba(173, 173, 173, 0.3);
+  padding-bottom: 2px;
+  margin: 5px 0 10px;
+  font-size: 20px;
+}
+small {
+  font-size: 13px;
+}
+#wrapper {
+  width: 1028px;
+  margin: 7em auto;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 203px 300px black; /* This looks bad on chrome */
+}
+nav {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+nav ul {
+  margin: 0 auto;
+  padding: 0;
+}
+nav li {
+  display: inline;
+}
+#intro p {
+  padding: 0 10px;
+  text-align: center;
+}
+#intro p:last-child {
+  font-size: 18px;
+  margin-top: 50px;
+}
+.aligndiv {
+  float: left;
+  cursor: pointer;
+  width: 481.5px;
+  height: 118px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  margin: 15px 2.5px 40px 5px;
+}
+.aligndiv:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: black;
+}
+.aligndiv:hover h2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  color: black;
+}
+#project1 {
+	margin-right: 5px;
+	margin-left: 7.5px;
+}
+#project2 {
+  margin-right: 7.5px;
+}
+footer {
+  clear: left;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
